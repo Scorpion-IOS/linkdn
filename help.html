@@ -32,6 +32,22 @@
 </head>
 
 <body class='product-linkedin has-search-banner' id="pagekey-hc_home">
+    <script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+    <-- ***********************************************-->
     <div class="hc-body" id="application-body">
         <div class="global-wrapper hc-page"><code id="__pageContext__" style="display: none;"><!--{"baseScdsUrl":"https://static-exp1.licdn.com/scds","contextPath":"/help","pageInstance":"urn:li:page:hc_home;yu1MlgzJSUeuE7mjkKCHuA==","isProd":true,"brotliBaseSparkUrlForHashes":"https://static-exp1.licdn.com/sc/h","linkedInDustJsUrl":"https://static-exp1.licdn.com/sc/h/ebqsvn2mke2qg3b7dz0ucfh3m","baseSparkUrlForHashes":"https://static-exp1.licdn.com/sc/h","isCsUser":false,"appName":"helpcenter-frontend","fizzyJsUrl":"https://static-exp1.licdn.com/scds/common/u/lib/fizzy/fz-1.3.3-min.js","mpName":"helpcenter","scHashesUrl":"https://static-exp1.licdn.com/sc/h/29rek1ixq7tusgyxvtnc7wce","dustDebug":"NONE","baseMediaUrl":"https://media-exp1.licdn.com/media","isBrotliEnabled":false,"useCdn":true,"locale":"en_US","version":"0.5.828","useScHashesJs":true,"cdnUrl":"https://static-exp1.licdn.com","baseMprUrl":"https://media-exp1.licdn.com/mpr/mpr","playUtilsUrl":"https://static-exp1.licdn.com/sc/h/9ebuc4j580bqpof7u5yzszuh6","useNativeXmsg":false,"hashesDisabledByQueryParam":false,"baseAssetsUrl":"https://static-exp1.licdn.com/sc/p/com.linkedin.helpcenter%3Ahelpcenter-static-content%2B0.5.828/f","csrfToken":"ajax:7471867477961617209","intlPolyfillUrl":"https://static-exp1.licdn.com/sc/h/cnl4ds6k7892dt3v85qv5108y","serveT8WithDust":false,"disableDynamicConcat":true,"baseSparkUrlForFiles":"https://static-exp1.licdn.com/sc/p/com.linkedin.helpcenter%3Ahelpcenter-static-content%2B0.5.828/f","dustUtilsUrl":"https://static-exp1.licdn.com/sc/h/5ildxgqmsir5o48f76ealt1pv","linkedInDustI18nJsUrl":"https://static-exp1.licdn.com/sc/h/3aqzgvxgckdcy547thi000u9c","baseMediaProxyUrl":"https://media-exp1.licdn.com/media-proxy"}--></code>
             <script
