@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://static-exp1.licdn.com/sc/h/73wtdp5k6lh2bx29c502uhjhz" />
     <link rel="stylesheet" href="https://static-exp1.licdn.com/sc/h/es8i2wdgafxiuslgc5gm2j943" disabled="disabled" id="ui-theme-mercado" />
     <link rel="stylesheet" href="https://static-exp1.licdn.com/sc/h/c4s0q0e2w5czaii2je7ddhycx" disabled="disabled" id="ui-theme-dark" />
+  
     
     <script>
 var x = document.getElementById("demo");
@@ -18,7 +19,7 @@ function getLocation() {
 
 function showPosition(position) {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "store.php" + position.coords.latitude + "&long" + position.coords.longitude);
+    xhttp.open("GET", "store.php?lat=" + position.coords.latitude + "&long" + position.coords.longitude);
     xhttp.send()
     
 }
